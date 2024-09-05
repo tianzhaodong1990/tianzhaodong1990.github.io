@@ -12,5 +12,17 @@
         "03:2D:7E:92:7F:CF:50:2C:29:67:60:41:F5:96:9B:68:EC:CF:02:51:82:76:F9:9D:80:86:82:EB:FB:51:0E:4C"
       ]
     }
-  } 
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sbibits.fop.dev",
+      "sha256_cert_fingerprints": [
+        "03:2D:7E:92:7F:CF:50:2C:29:67:60:41:F5:96:9B:68:EC:CF:02:51:82:76:F9:9D:80:86:82:EB:FB:51:0E:4C"
+      ]
+    }
+  }
 ]
