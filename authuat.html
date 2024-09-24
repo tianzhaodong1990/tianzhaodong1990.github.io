@@ -11,23 +11,12 @@
     <script>
         function launchAppOrRedirect() {
             // 尝试通过intent打开应用
-            var packageName = "com.example.app";
             var intentUrl = "intent://tianzhaodong1990.github.io/sbisecauthuat?link=https://www.sbisec.co.jp/ETGate?trid%3D17259526156162961725&apn=com.sbibits.sbiauth.uat#Intent;scheme=https;package=com.sbibits.sbiauth.uat;S.browser_fallback_url=https://www.sbisec.co.jp/ETGate?trid=17259526156162961725;end";
-
-            try {
-                // 尝试访问intent URL
-                var iframe = document.createElement("iframe");
-                iframe.style.display = "none";
-                iframe.src = intentUrl;
-                document.body.appendChild(iframe);
-                setTimeout(function() {
-                    document.body.removeChild(iframe);
-                }, 1000); // 移除iframe以避免内存泄漏
-            } catch (e) {
-                // 如果intent无法处理，则跳转到Google Play商店
-                var playStoreUrl = "https://play.google.com/store/apps/details?id=com.sbibits.sbiauth.uat&pcampaignid=fdl_long&url=https://www.sbisec.co.jp/ETGate?trid=17259526156162961725";
-                window.location.href = playStoreUrl;
-            }
+            var playStore = "https://play.google.com/store/apps/details?id=com.sbibits.sbiauth.uat&pcampaignid=fdl_long&url=https://www.sbisec.co.jp/ETGate?trid=17259526156162961725";
+           window.location.href = intentUrl;
+           setTimeout(function() {
+                window.location.href = playStore;
+           }, 500);
         }
     </script>
 </head>
