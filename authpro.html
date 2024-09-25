@@ -11,7 +11,7 @@
     <script>
         function launchAppOrRedirect() {
             // 尝试通过intent打开应用
-            var intentUrl = "intent://tianzhaodong1990.github.io/sbisecauthpro?link=https://www.sbisec.co.jp/ETGate?auth%3D17259526156162961725&apn=jp.co.sbisec.sbiauth#Intent;scheme=https;package=jp.co.sbisec.sbiauth;S.browser_fallback_url=https://play.google.com/store/apps/details?id=jp.co.sbisec.sbiauth&pcampaignid=fdl_long&tzd=test;end";
+            var intentUrl = "intent://tianzhaodong1990.github.io/sbisecauthpro?link=https://www.sbisec.co.jp/ETGate?auth%3D17259526156162961725&apn=jp.co.sbisec.sbiauth#Intent;scheme=https;action=android.intent.action.VIEW;package=jp.co.sbisec.sbiauth;S.browser_fallback_url=https://play.google.com/store/apps/details?id=jp.co.sbisec.sbiauth&pcampaignid=fdl_long&tzd=test;end";
             var playStore = "https://play.google.com/store/apps/details?id=jp.co.sbisec.sbiauth&pcampaignid=fdl_long&url=https://www.sbisec.co.jp/ETGate?auth=17259526156162961725";
            window.location.href = intentUrl;
            setTimeout(function() {
