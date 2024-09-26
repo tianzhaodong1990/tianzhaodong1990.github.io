@@ -1,14 +1,15 @@
 {
-  "applinks": {
-    "apps": [],
-    "details": [
-      {
-        "appID": "MHJY2Y94V4.com.sbibits.sbiauth.uat",
-        "paths": [
-          "NOT /_/*",
-          "/*"
+    "applinks": {
+        "details": [
+            {
+                "appIDs": [ "MHJY2Y94V4.com.sbibits.sbiauth.uat" ],
+                "components": [
+                    {
+                        "/": "/sbisecauthuat/*",
+                        "comment": "/sbisecauthuat/で始まる全てのURLが一致し、Universal Linkで起動される。"
+                    }
+                ]
+            },
         ]
-      }
-    ]
-  }
+    }
 }
