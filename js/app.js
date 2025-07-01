@@ -2,9 +2,9 @@ let isPlaying = false;  // 控制是否在播放状态
 let randomTimeout;  // 保存setTimeout的返回值，用于清除
 let currentMode = "human";  // 默认为人类模式
 let resetCount = 0;  // 重置次数
-let currentOrder = 2;  // 默认当前时间的餐次 (0 = 早餐, 1 = 午餐, 2 = 晚餐)
+let currentOrder = 1;  // 默认当前时间的餐次 (0 = 早餐, 1 = 午餐, 2 = 晚餐)
 let screenWidth, screenHeight;
-let currentHour = (new Date()).getHours();
+// let currentHour = (new Date()).getHours();
 let currentFoodPool = []; // 添加一个全局变量用于存储当前的食物池
 
 // 各模式的食物池
@@ -18,13 +18,13 @@ $(document).ready(function () {
     printProjectInfo();
 
     // 初始化时间
-    if (currentHour < 9 || currentHour >= 23) {
-        currentOrder = 0; // 早饭
-    } else if (currentHour < 13) {
-        currentOrder = 1; // 午饭
-    } else {
-        currentOrder = 2; // 晚饭
-    }
+    // if (currentHour < 9 || currentHour >= 23) {
+    //     currentOrder = 0; // 早饭
+    // } else if (currentHour < 13) {
+    //     currentOrder = 1; // 午饭
+    // } else {
+    //     currentOrder = 2; // 晚饭
+    // }
 
     // 更新餐次
     updateMealForCurrentOrder(currentOrder);
