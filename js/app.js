@@ -184,7 +184,7 @@ function triggerRandomFoodDisplay() {
             fontSize: fontSize + "px"
         }).appendTo($("#temp_container"));
 
-        randomTimeout = setTimeout(displayRandomFood, 60);
+        randomTimeout = setTimeout(displayRandomFood, 30);
     }
 
     displayRandomFood();
